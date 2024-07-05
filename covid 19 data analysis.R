@@ -91,7 +91,7 @@ cohes_d
 # Gender
 # death
 
-data <- read_excel("~/Desktop/Projects/R-Project/Second-R-Project/COVID19_line_list_data.xlsx")
+data <- read_excel("COVID19_line_list_data.xlsx")
 
 data <- data %>% 
   mutate(death=if_else((death!="0" & death!="1"), "1", death))
